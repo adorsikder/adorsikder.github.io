@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height:79px;
+    align-items: center;
+    background-color: rgb(28, 28, 95);
+} 
+
+nav a {
+    text-decoration: none;
+    margin: 0px 23px;
+    justify-content: center;
+    color: #fff;
+}
+
+nav a:hover{
+    color: rgb(57, 72, 233);
+    font-size: 1.2rem;
+}
+
+.left{
+    font-size: 1.9rem;
+}
+
+.section1{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.section1 > div{
+    width: 30%;
+    margin: 25px 0px;
+}
+
+img{
+    width: 80%;
+    margin: 10px 0px;
+}
+.leftsection{
+    font-size: 3rem;
+}
+.pupu{
+    color: rgb(155, 86, 219);
+}
+
+#element{
+    color: rgb(155, 86, 219);
+}
+hr{
+   border: 0;
+   height: 1px;
+   background-color: rgb(70, 4, 170);
+   margin: 40px 80px;
+}
+p {
+    font-size: 30px;
+}
+
+.sectionabout1{
+    padding: 50px 23%;
+    font-size: 30px;
+}
+
+footer{
+    height: 173px;
+    background-color:#0a0a1f;
+}
+.footer{
+    padding: 25px 125px;
+}
+.footer1{
+    padding-left: 200px;
+}
+.footer2{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+.footer2 a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+}
+.footer2 a:hover{
+    font-size: 1.5rem;
+    color: rgb(114, 85, 4);
+}
+.footer3{
+text-align: center;
+}
+
+.formh1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 80px;
+    color:rgb(0, 208, 255);
+}
+
+.in1{
+    height: 50px;
+    width: 40%;
+    margin: 17px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.sms{
+    height: 90px;
+    width: 100%;
+    margin: 20px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 32px;
+}
+
+.send{
+    height: 50px;
+    width: 30%;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 170, 255);
+    border-radius: 40px;
+    color: #fff;
+}
+.send:hover{
+    font-size: 1.5rem;
+    background-color:  rgb(7, 108, 159);
+    color: rgb(144, 236, 255);
+}
+
+/*services */
+
+.service-section-1{
+    padding: 50px 23%;
+}
+
+.service-section-h1{
+    font-size: 3rem;
+}
+.service-section-h4{
+    font-size: 1.7rem;
+}
