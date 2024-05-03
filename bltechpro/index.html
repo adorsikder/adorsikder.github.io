@@ -1,0 +1,1288 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BL TECH PRO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/output.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <button style="margin-right: 30px;"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
+      class="group fixed bottom-8 right-8 flex h-12 w-12 items-center justify-center rounded-full bg-gray-800 text-white"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="h-6 w-6 transition duration-300 ease-out group-active:translate-y-1"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18"
+        />
+      </svg>
+    </button>
+    <!-- Header -->
+    <header id="topnav" class="sticky top-0 z-10 border-b bg-white font-roboto backdrop-blur-3xl">
+      <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-20 items-center justify-between">
+          <div class="md:flex md:items-center md:gap-12 order-2 md:order-none">
+            <a
+              class="text-custom-green-400 flex items-center gap-2 text-base font-semibold"
+              href="#"
+            >
+              <span class="sr-only">Home</span>
+              <img
+                class="h-[53px] w-[150px] object-scale-down md:w-[262px] lg:object-cover"
+                src="./images/logo.png"
+                alt=""
+              />
+            </a>
+          </div>
+
+          <div class="hidden lg:block">
+            <nav aria-label="Global">
+              <ul class="flex items-center gap-6 text-base font-semibold">
+                <li>
+                  <a class="flex items-start gap-2 text-[#EF8407]" href="pages/pricing-single.html">
+                    <img class="h-5 w-[22px] object-cover" src="./images/vip.png" alt="vip" /><span
+                      >VIP Signals</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a class="text-custom-black transition hover:text-[#0094D8]" href="#">
+                    Analysis
+                  </a>
+                </li>
+                <li>
+                  <a class="text-custom-black transition hover:text-[#0094D8]" href="#">
+                    Economic Calendar
+                  </a>
+                </li>
+                <li>
+                  <a class="text-custom-black transition hover:text-[#0094D8]" href="#">
+                    Risk Disclaimer
+                  </a>
+                </li>
+                <li class="relative">
+                  <button
+                    class="group relative block text-custom-black transition hover:text-[#0094D8]"
+                  >
+                    <span class="flex items-center gap-2"
+                      >Mores<svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="h-5 w-5 transition duration-300 group-hover:rotate-180"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                    <div
+                      class="absolute right-0 hidden h-auto w-full min-w-[250px] rounded-xl bg-white p-2 shadow group-hover:block"
+                    >
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/after-submission.html"
+                      >
+                        After Submission
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/checkout.html"
+                      >
+                        Checkout
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/invoice.html"
+                      >
+                        Invoice
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/payment-info-neteller.html"
+                      >
+                        Payment Info Neteller
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/payment-info-neteller.html"
+                      >
+                        Payment Info Neteller
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/payment-info-perfect-money.html"
+                      >
+                        Payment Info Perfect Money
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/payment-info-skrill.html"
+                      >
+                        Payment Info Skrill
+                      </a>
+                      <a
+                        class="block px-2 py-1.5 text-start text-custom-black transition hover:text-[#0094D8]"
+                        href="./pages/pricing-single.html"
+                      >
+                        Pricing Single
+                      </a>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="flex items-center gap-4 order-1 md:order-none">
+            <div class="sm:flex sm:gap-4">
+              <a
+                class="hidden rounded-md bg-gradient-to-l from-[#1A9DD9] to-[#6245A1] px-5 py-2.5 text-lg font-black text-white transition duration-300 ease-out hover:scale-105 hover:bg-gradient-to-r lg:block"
+                href="#"
+              >
+                Sign In
+              </a>
+
+              <button
+                id="btn-toggle"
+                class="block rounded bg-gray-100 p-2.5 text-gray-600 shadow-sm transition duration-300 ease-out hover:text-gray-600/75 active:translate-y-px lg:hidden"
+              >
+                <span class="sr-only">Toggle menu</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="opacity-0 w-10 h-10 order-3 md:hidden">
+            <p></p>
+          </div>
+        </div>
+        <div id="responsive-menu" class="l hidden py-4">
+          <nav aria-label="Global">
+            <ul class="flex flex-col items-center gap-6 text-base font-semibold">
+              <li>
+                <a
+                  class="flex items-start gap-2 text-[#EF8407] transition hover:text-[#0094D8]"
+                  href="#vip-sub"
+                >
+                  <img class="h-5 w-[22px] object-cover" src="./images/vip.png" alt="vip" /><span
+                    >VIP Signals</span
+                  >
+                </a>
+              </li>
+              <li>
+                <a class="text-custom-black transition hover:text-[#0094D8]" href="#"> Analysis </a>
+              </li>
+              <li>
+                <a class="text-custom-black transition hover:text-[#0094D8]" href="#">
+                  Economic Calendar
+                </a>
+              </li>
+              <li>
+                <a class="text-custom-black transition hover:text-[#0094D8]" href="#">
+                  Risk Disclaimer
+                </a>
+              </li>
+              <li class="relative">
+                <button
+                  class="group relative block text-custom-black transition hover:text-[#0094D8]"
+                >
+                  <span class="flex items-center justify-center gap-2"
+                    >Mores<svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="h-5 w-5 transition duration-300 group-hover:rotate-180"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                      />
+                    </svg>
+                  </span>
+                  <div class="hidden h-auto w-full min-w-[200px] rounded-xl bg-white p-2 shadow group-hover:block">
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/after-submission.html">
+                      After Submission
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/checkout.html">
+                      Checkout
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/invoice.html">
+                      Invoice
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/payment-info-neteller.html">
+                      Payment Info Neteller
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/payment-info-neteller.html">
+                      Payment Info Neteller
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/payment-info-perfect-money.html">
+                      Payment Info Perfect Money
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/payment-info-skrill.html">
+                      Payment Info Skrill
+                    </a>
+                    <a class="block px-2 py-1.5 text-center text-custom-black transition hover:text-[#0094D8]" href="./pages/pricing-single.html">
+                      Pricing Single
+                    </a>
+                  </div>
+                  
+                </button>
+              </li>
+            </ul>
+          </nav>
+          <a
+            class="mx-auto mt-4 block w-full max-w-sm rounded-md bg-gradient-to-l from-[#1A9DD9] to-[#6245A1] px-5 py-2.5 text-center text-lg font-black text-white"
+            href="#"
+          >
+            Sign In
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main class="font-roboto">
+      <section class="bg-primary-black">
+        <div
+          class="mx-auto grid w-full max-w-screen-xl place-items-center px-4 py-8 sm:px-6 md:min-h-[calc(100vh-4rem)] md:px-8 lg:py-[132px]"
+        >
+          <div class="w-full max-w-lg sm:max-w-max">
+            <div class="">
+              <h1
+                class="mt-4 text-center text-3xl font-semibold leading-10 text-white md:text-5xl md:leading-[60px] lg:text-[70px] lg:font-normal lg:leading-[100px]"
+              >
+                Trade with Expert Trader <br />
+                Become a <span class="text-[#19ADC1]">Pro!</span>
+              </h1>
+            </div>
+            <div class="mt-[102px] grid grid-cols-1 gap-8 md:grid-cols-2 w-full">
+              <a href="#" class="group block w-full">
+                <div
+                  class="flex w-full flex-col-reverse justify-between rounded-[40px] bg-[#BB2C9C] lg:flex-row lg:items-center"
+                >
+                  <div class="p-8 lg:p-11">
+                    <h4
+                      class="text-xl font-medium leading-10 text-white md:text-2xl lg:text-[30px] lg:leading-[40px]"
+                    >
+                      Stop Making <br />
+                      Lose!
+                    </h4>
+                    <p class="mt-6 text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="h-6 w-6 transition duration-300 group-hover:translate-x-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg>
+                    </p>
+                  </div>
+                  <div class="-mt-4 pb-8">
+                    <img
+                      class="transtion mx-auto h-[250px] w-[250px] duration-300 ease-out group-hover:scale-110 sm:h-[304px] sm:w-[304px]"
+                      src="./images/lose-trader.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="group block w-full">
+                <div
+                  class="flex w-full flex-col-reverse justify-between rounded-[40px] bg-[#7C41BE] lg:flex-row lg:items-center"
+                >
+                  <div class="py-8 pl-8 lg:py-11 lg:pl-11">
+                    <h4
+                      class="text-xl font-medium leading-10 text-white md:text-2xl lg:text-[30px] lg:leading-[40px]"
+                    >
+                      Earn more Like A <br />
+                      Pro Trader
+                    </h4>
+                    <p class="mt-6 text-white">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="h-6 w-6 transition duration-300 group-hover:translate-x-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                        />
+                      </svg>
+                    </p>
+                  </div>
+                  <div class="-mt-4 pb-8">
+                    <img
+                      class="transtion mx-auto h-[250px] w-[250px] duration-300 ease-out group-hover:scale-110 sm:h-[304px] sm:w-[304px]"
+                      src="./images/pro-trader.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <section style="padding-bottom:18vh; background: #fff;" class="bg-purple-black pb-80">
+        <section class="text-white cdn-text-white">
+          <div class="mx-auto w-full max-w-[1170px] px-4 pt-20 sm:px-6 md:px-8">
+            <div class="flex flex-col items-center gap-y-12 md:flex-row">
+              <div class="w-full md:w-[60%]">
+                <h4
+                  class="w-full-ador text-3xl font-medium leading-10 md:text-5xl md:leading-[60px] lg:text-[50px] lg:leading-[70px]"
+                >
+                Grow your trading 
+                without Risk
+                </h4>
+                <div class="mt-6 space-y-4">
+                  <p class="flex items-center gap-5 text-xl">
+                    <span class="text-[#06B0A1]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="h-9 w-9"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                    </span>
+                    One stop loss and one take profit
+                  </p>
+                  <p class="flex items-center gap-5 text-xl">
+                    <span class="text-[#06B0A1]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="h-9 w-9"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                    </span>
+                    Proper tight stop loss and big take profit level
+                  </p>
+                  <p class="flex items-center gap-5 text-xl">
+                    <span class="text-[#06B0A1]"
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2"
+                        stroke="currentColor"
+                        class="h-9 w-9"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                        />
+                      </svg>
+                    </span>
+                    We provide instant notification of all signal updates
+                  </p>
+                </div>
+                <div class="mt-20 flex flex-col items-center gap-4 md:flex-row">
+                  <a
+                    href="#"
+                    class="group w-full rounded-full bg-gradient-to-r px-0.5 py-0.5 text-center md:w-auto"
+                    ><span
+                      
+                      ><img src="images/download gd.png" alt="app download"></span
+                    ></a
+                  >
+                  <a
+                    href="#"
+                    class="group w-full rounded-full bg-gradient-to-r  px-0.5 py-0.5 text-center md:w-auto"
+                    ><span
+                      
+                      ><img class="download.app" src="images/download app.png" alt="app download"></span
+                    ></a
+                  >
+                  
+                  
+                </div>
+              </div>
+              <div class="relative w-full md:w-[40%]">
+                
+                <img class="h-full w-full" src="./images/mobile.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 6 Years of Success! -->
+
+        <section class="py-20 text-white cdn-text-white">
+          <div class="mx-auto w-full max-w-[1584px] px-4 pt-4 sm:px-6 md:px-8 lg:pt-16">
+            <div class="flex items-center justify-center">
+              <div class="">
+                <h4
+                  class="text-center text-3xl font-medium leading-10 md:text-5xl md:text-[50px] md:leading-[50px] lg:text-[60px] lg:leading-[70px]"
+                >
+                6 Years of Success!
+                </h4>
+
+              
+                  <table class="success-table">
+                    <thead>
+                     <tr>
+                      <td><p>2019</p> <span>27,526 pips</span> </td>
+                      <td><p>2020</p> <span>26,350 pips</span> </td>
+                      <td><p>2021</p> <span>27,526 pips</span> </td>
+                     </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                      <td><p>2022</p > <span>24,738 pips</span> </td>
+                      <td><p>2023</p > <span>27,526 pips</span> </td>
+                      <td><p>2024</p > <span>27,526 pips</span> </td>
+                    </tr>
+                  </tbody>
+
+                  </table>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        <!-- Get VIP Subscription and Trade Like a Pro -->
+
+        <section id="vip-sub vip-sub-trade" class="px-4 py-6 text-white md:px-6 md:py-8 lg:py-20" style="background: #fff;">
+          <h4
+            class=" text-center text-3xl font-medium leading-10 md:text-5xl md:leading-[60px] lg:text-[50px] lg:leading-[70px]" style="color: #000;"
+          >
+            Get <span style="color: #523492;">VIP Signal</span> and Trade Like a Pro
+          </h4>
+
+          <div
+            class="mx-auto mt-16 w-full max-w-[1328px] rounded-[57px] border-2 border-[#E8D285] bg-[#261B3C] px-4 py-16 sm:px-6 md:px-8" style="border: none;
+            color: #fff;
+            background: #000;"
+          >
+            <div class="flex items-center">
+              <div class="">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0">
+                  <div class="space-y-6">
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      VIP Telegram channel!
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      Short & Long term signals
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      Trade setups delivered Entry Points with proper level
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      Trade manual Closing Updates
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      Monthly Profit 2000-3000 pips
+                    </p>
+                  </div>
+                  <div class="space-y-4 md:space-y-6">
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      <span class="hidden md:block">3 to 6 vip signal per day with proper stop loss and take profit</span> <span class="block md:hidden">3 to 6 vip signal daily with stop loss and take profit</span>
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      85-92% signal accuracy
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      2062 pips profit per month average in last year
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      Important News Analysis Report
+                    </p>
+                    <p class="flex items-center gap-5 text-[13px] md:text-xl">
+                      <span class="text-[#42BD65]"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          class="h-9 w-9"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                          />
+                        </svg>
+                      </span>
+                      24X7 Email & Telegram Support
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="mt-20 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                >
+                  <a href="#" class="block">
+                    <div
+                      class="relative rounded-[20px] bg-gradient-to-tr from-[#2A9549] to-[#099D94] px-4 pb-9 pt-8 text-white transition duration-300 ease-out hover:scale-105 hover:bg-gradient-to-br"
+                    >
+                      <p
+                        class="absolute -top-6 left-4 inline-block rounded-full bg-[#E1E92C] px-4 py-3 text-xl font-medium text-[#261B3B]"
+                      >
+                        Big Discount
+                      </p>
+                      <p class="mt-2 text-lg md:text-2xl font-bold">Lifetime Subscription</p>
+                      <h4 class="mt-[22px] flex items-center gap-3.5 text-3xl md:text-[50px] font-bold">
+                        $ 100 <span class="text-2xl font-medium line-through">$ 299.99</span>
+                      </h4>
+                    </div>
+                  </a>
+                  <a href="#" class="block">
+                    <div
+                      class="rounded-[20px] bg-gradient-to-bl from-[#1DB1C5] to-[#216A93] px-4 pb-9 pt-8 text-white transition duration-300 ease-out hover:scale-105 hover:bg-gradient-to-tr"
+                    >
+                      <p class="mt-2 text-lg md:text-2xl font-bold">1 Year Subscription</p>
+                      <h4 class="mt-[22px] text-3xl flex items-center gap-3.5 md:text-[50px] font-bold">$ 150</h4>
+                    </div>
+                  </a>
+                  <a href="#" class="block">
+                    <div
+                      class="rounded-[20px] bg-gradient-to-bl from-[#C285E8] to-[#704B82] px-4 pb-9 pt-8 text-white transition duration-300 ease-out hover:scale-105 hover:bg-gradient-to-tr"
+                    >
+                      <p class="mt-2 text-lg md:text-2xl font-bold">4 Month Subscription</p>
+                      <h4 class="mt-[22px] text-3xl flex items-center gap-3.5 md:text-[50px] font-bold">$ 80</h4>
+                    </div>
+                  </a>
+                  <a href="#" class="block">
+                    <div
+                      class="rounded-[20px] bg-gradient-to-bl from-[#BDA16A] to-[#965C18] px-4 pb-9 pt-8 text-white transition duration-300 ease-out hover:scale-105 hover:bg-gradient-to-tr"
+                    >
+                      <p class="mt-2 text-lg md:text-2xl font-bold">2 Month Subscription</p>
+                      <h4 class="mt-[22px] text-3xl flex items-center gap-3.5 md:text-[50px] font-bold">$ 50</h4>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!-- Get Profit in 3 Simple Steps -->
+
+        <section class="py-6 text-white md:py-20" style="background: #fff;">
+          <div class="mx-auto w-full max-w-[1172px] px-4 sm:px-6 md:px-8">
+            <div class="flex justify-center items-center">
+              <div class="">
+                <h4
+                  class="text-center text-3xl font-medium leading-10 md:text-5xl md:leading-[60px] lg:text-[50px] lg:leading-[70px]"
+                >
+                  Get Profit in 3 Simple Steps
+                </h4>
+
+                <div class="mt-20 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+                  <div class="rounded-[40px] bg-white px-[18px] pb-14 pt-9 text-center" style="box-shadow: 7px 5px 33px  rgba(0, 0, 0, 0.185);">
+                    <img
+                      class="ador-h-28 inline-block h-28 w-28 rounded-full"
+                      src="./images/copy.png"
+                      alt=""
+                    />
+                    <h4 class="mt-7 text-[25px] font-medium text-primary-text">Copy our signals</h4>
+                    <p class="mt-2 text-lg font-medium text-primary-text">
+                      provided by highly professional traders
+                    </p>
+                  </div>
+                  <div class="rounded-[40px] bg-white px-[18px] pb-14 pt-9 text-center" style="box-shadow: 7px 5px 33px  rgba(0, 0, 0, 0.185);"> 
+                    <img
+                      class="ador-h-28 inline-block h-28 w-28 rounded-full"
+                      src="./images/follow.png"
+                      alt=""
+                    />
+                    <h4 class="mt-7 text-[25px] font-medium text-primary-text">
+                      Follow accurate signals
+                    </h4>
+                    <p class="mt-2 text-lg font-medium text-primary-text">
+                      and trade like a professional
+                    </p>
+                  </div>
+                  <div class="rounded-[40px] bg-white px-[18px] pb-14 pt-9 text-center" style="box-shadow: 7px 5px 33px  rgba(0, 0, 0, 0.185);">
+                    <img
+                      class="ador-h-28 inline-block h-28 w-28 rounded-full object-cover"
+                      src="./images/make.png"
+                      alt=""
+                    />
+                    <h4 class="mt-7 text-[25px] font-medium text-primary-text">Make Profits</h4>
+                    <p class="mt-2 text-lg font-medium text-primary-text">
+                      Stay safe and become successful
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Get Testimonials -->
+        <section class="testimonials">
+          <div class="container">
+            <div class="section-swiper">
+              <h2 style="color: #000;" class="title">What Our Customers Are Saying</h2>
+              <p style="color: #000;">our customer services will be great experience for you without doubt and in no-time</p>
+            </div>
+          </div>
+
+
+          <section class="new-body">
+            <div class="ador-wrapper">
+              <i id="left" class="fa-solid fa-angle-left"></i>
+              <ul class="ador-carousel">
+                <li class="ador-card">
+                  <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                  <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                  <span>DEW DEVELOPER</span>
+                </li>
+        
+                <li class="ador-card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                    <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                    <span>DEW DEVELOPER</span>
+                  </li>
+                  <li class="ador-card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                    <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                    <span>DEW DEVELOPER</span>
+                  </li>
+                  <li class="ador-card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                    <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                    <span>DEW DEVELOPER</span>
+                  </li>
+                  <li class="ador-card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                    <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                    <span>DEW DEVELOPER</span>
+                  </li>
+                  <li class="ador-card">
+                    <div class="img"><img src="images/img-1.jpg" alt="img" draggable="false"></div>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos quos eveniet molestiae similique facere possimus, rerum nobis fugit, ducimus repudiandae!</span>
+                    <h2 style="color: rgba(65, 65, 66, 0.889);">ALEX </h2>
+                    <span>DEW DEVELOPER</span>
+                  </li>
+              </ul>
+               <i id="right our-right-btn" class="fa-solid fa-angle-right"></i>
+            </div>
+          </section>
+
+
+        </section>
+
+        
+
+        
+
+
+
+        <!-- Gallery-->
+
+        <section class="gallery">
+          <div class="ador-container">
+            <div class="row ador-row">
+              <div class="ador-midle">
+              <div class="gallery-filter">
+              
+                <span class="filter-item active" data-filter="client-feedback">Client Feedback</span>
+                <span class="filter-item" data-filter="client-profit">Client Profit</span>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+          
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 2.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 3.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 4.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 5.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-feedback">
+                <div class="gallery-item-inner">
+                  <img src="images/client feedback 6.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+        
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+              <!-- gallery item start -->
+              <div class="ador-gallery-item client-profit">
+                <div class="gallery-item-inner">
+                  <img src="images/client profit 1.png">
+                </div>
+              </div>
+              <!-- gallery item end -->
+        
+              
+        
+        
+        
+        
+            </div>
+          </div>
+        </section>
+
+        
+
+        
+
+
+        
+
+      
+
+
+        
+
+
+
+
+        <section class="Trade-with-trusted-brokers">
+          <div class="trade-brokers">
+            <img class="trade-brokers-img" src="images/Trusted Brokers 2.png">
+          </div>
+
+
+
+          <section  class="subscribe-wrapper">
+
+            <div class="subscribe-container">
+              <div class="subscribe-box">
+                
+                <h2 class="mr-pd">Subscribe Newsletter</h2>
+                <p class="mr-pd">Don't miss exciting offer and news!</p>
+              
+                <form>
+                  <input type="email" placeholder="Enter your E-mail">
+                  <button> <div class="ador-send">SEND</div></button>
+                </form>
+              </div>
+            </div>
+            <img class="subscribe-img" src="images/msg-icon.png" alt="">
+            
+          </section>
+
+
+        </section>
+        
+       
+              
+
+        
+        
+          
+      
+
+
+
+        
+      </section>
+    </main>
+
+
+    
+
+    
+
+    
+
+
+
+    <!-- Footer -->
+    <footer style="margin-top: 17vh;" class="bg-grya-200">
+      <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <div>
+            <div class="text-custom-green-500">
+              <img
+                class="h-[53px] w-[150px] object-scale-down md:w-[262px] lg:object-cover"
+                src="./images/logo.png"
+                alt=""
+              />
+            </div>
+
+            <p class="mt-4 max-w-xs text-gray-500">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
+              molestias.
+            </p>
+
+
+            <p style="font-weight: 600; font-size: 20px;">Download App</p>
+
+
+
+            <div style="display: flex; " >
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <img class="ador-footer-img" src="images/download gd.png" alt="">
+              </a>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <img class="ador-footer-img" src="images/download gd.png" alt="">
+              </a>
+              <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition hover:opacity-75"
+              >
+                <img class="ador-footer-img" src="images/download app.png" alt="">
+              </a>
+            </div>
+            
+
+
+            <ul class="mt-8 flex gap-6 ">
+
+              
+
+              
+             
+             
+                
+
+              
+
+
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition ador-hover-fb"
+                >
+                  <span class="sr-only">Facebook</span>
+
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                href="#"
+                rel="noreferrer"
+                target="_blank"
+                class="text-gray-700 transition ador-hover-xt"
+              >
+              <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition ador-hover-ln"
+                >
+                  <span class="sr-only">Linkedin</span>
+
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  rel="noreferrer"
+                  target="_blank"
+                  class="text-gray-700 transition ador-hover-tm"
+                >
+                  <span class="sr-only">Telegram</span>
+
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+              </li>
+
+             
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+            <div>
+              <p class="font-medium text-gray-900">Paid VIP Signals
+              </p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">Analysis </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> Economic calendar</a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Company</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75">Risk Disclaimer </a>
+                </li>
+
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> About Company </a>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p class="font-medium text-gray-900">Contact</p>
+
+              <ul class="mt-6 space-y-4 text-sm">
+                <li>
+                  <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQ </a>
+                </li>
+              </ul>
+
+       
+       
+
+            </div>
+
+            
+
+          </div>
+        </div>
+
+        <p>HIGH RISK WARNING: Foreign exchange trading carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. 
+          Before you decide to trade foreign exchange, carefully consider your investment objectives, experience level, and risk tolerance. You could lose some or all of your initial investment; 
+          do not invest money that you cannot afford to lose. Educate yourself on the risks associated with foreign exchange trading, and seek advice from an independent financial or
+           tax advisor if you have any questions. Any data and information is provided ‘as is’ solely for informational purposes and is not intended for trading purposes or advice. 
+          Past performance is not indicative of future results.</p>
+
+        <p class="text-center text-sm font-semibold text-gray-700">
+          &copy; 2024. BL TECH PRO. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
